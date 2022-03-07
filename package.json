@@ -1,0 +1,22 @@
+{
+  "name": "final_dev_aportation",
+  "version": "1.0.0",
+  "description": "final project backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HugoRoo/dev_backend_finalmodule.git"
+  },
+  "author": "\"team backend\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HugoRoo/dev_backend_finalmodule/issues"
+  },
+  "homepage": "https://github.com/HugoRoo/dev_backend_finalmodule#readme",
+  "dependencies": {
+    "mongodb": "^4.4.1"
+  }
+}
