@@ -2,15 +2,18 @@ const Post = require('../models/post');
 
 
 
+
 const getAll = ()=>{
         
     return Post.find({}).populate({path: 'author comment.name', select:'name avatar'})
+
 }
 const createPost = async (dataPost) =>{
     const {author, title,image, article,tags, reaction, comment} = dataPost;
 
 
     const postCreated= await Post.create(dataPost);
+
     return Post.findById(postCreated._id).populate({path: 'author', select:'name'});
 
 }
@@ -26,13 +29,16 @@ const deletePost =  (idPost, idNow, idAuthor) =>{
     console.log(idAuthor);
     console.log(idPost);
     return Post.findByIdAndDelete(idPost)
+
 }
 const getForId = (idPost) =>{
     return Post.findById(idPost)
 }
+
 const getForIdWriter = (idWriter) =>{
     return Post.find({author : {_id: idWriter}}).populate({path: 'author', select:'name'})
 }
+
 const createComment = (idPost, dataComment) =>{
     
     
@@ -47,5 +53,7 @@ module.exports = {
     deletePost, 
     getForId,
     createComment,
+
     getForIdWriter,
+
 }

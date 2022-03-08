@@ -32,6 +32,7 @@ async function login(email, password){
     
 }
 
+
 async function uptadeWriter(idNow, idWriter, writerData){
     if(idWriter != idNow) throw new Error('Not permission for uptdate this writer')
     return Writer.findByIdAndUpdate(idWriter, writerData,{new: true})
@@ -52,4 +53,5 @@ module.exports = {
     uptadeWriter,
     deleteWriter,
     getForIdWriter
+
 }
