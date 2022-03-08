@@ -31,8 +31,27 @@ async function login(email, password){
     
     
 }
+
+
+async function uptadeWriter(idNow, idWriter, writerData){
+    if(idWriter != idNow) throw new Error('Not permission for uptdate this writer')
+    return Writer.findByIdAndUpdate(idWriter, writerData,{new: true})
+}
+
+async function deleteWriter(idNow, idWriter){
+    if(idWriter != idNow) throw new Error('Not permission for delete this writer')
+    return Writer.findByIdAndDelete(idWriter);
+}
+
+async function getForIdWriter(idWriter){
+    return Writer.findById(idWriter);
+}
 module.exports = {
     getAll,
     signUp,
-    login
+    login,
+    uptadeWriter,
+    deleteWriter,
+    getForIdWriter
+
 }
