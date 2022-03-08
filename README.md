@@ -7,7 +7,7 @@ Repartición de trabajo por Branches
 Todo se mergeara en la rama develop de ella descenderán las ramas que vayamos trabajando:
 <----------------------------------------------------------------------------------------->
 
-* Hugo - Branch feature_index_hugo index.js, install node, node_modules, .gitignore
+* Hugo - Branch feature_index_hugo index.js, install node, node_modules, .gitignore, .env
 * Hugo - Branch develop, README.md & merge all branches
 -------------------------------------------------------------------------------------->
 * Cris - Branch feat/models/cris post.js, writer.js, auth.js
