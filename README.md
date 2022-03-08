@@ -17,3 +17,6 @@ Repo SRC
 * Héctor - Branch feature_router, post.js, writer.js
 * Héctor - Branch feature_useCase,  post.js, writer.js, server.js
 ------------------------------------------------------------------->
+
+
+Al final se debera hacer el merge a la main branch.
