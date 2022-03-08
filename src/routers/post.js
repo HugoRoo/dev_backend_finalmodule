@@ -1,3 +1,32 @@
+Skip to content
+Search or jump to…
+Pulls
+Issues
+Marketplace
+Explore
+ 
+@HugoRoo 
+HugoRoo
+/
+dev_backend_finalmodule
+Public
+Code
+Issues
+Pull requests
+2
+Actions
+Projects
+Wiki
+Security
+More
+dev_backend_finalmodule/src/routers/post.js /
+@Deveckor
+Deveckor Add script to router
+Latest commit 7c2a8a8 7 hours ago
+ History
+ 1 contributor
+179 lines (156 sloc)  4.21 KB
+   
 const express = require('express');
 const useCasePost = require('../useCase/post');
 const auth = require('../middleware/auth');
@@ -177,3 +206,16 @@ router.post('/comment/:id', async (req, res) => {
     }
 })
 module.exports = router;
+© 2022 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Loading complete
